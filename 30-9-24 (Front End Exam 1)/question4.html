@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+        .fb-container{
+            display: flex;
+            width: 70%;
+            height: 60%;
+        }
+
+        .login-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            width: 25%;
+            background-color: blue;
+        }
+
+        .form-container{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aliceblue;
+        }
+
+        #otp-container{
+            width: 95%;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+         input{
+            width: 95%;
+            height: 40px;
+        }
+
+        #new1{
+            width: 95%;
+            font-size: 20px;
+        }
+
+        #para1{
+            margin-top: 210px;    
+        }
+
+        #get{
+            color: white;
+            margin-right: 70px;
+        }
+
+        button{
+            background-color: orange;
+            width: 95%;
+            border-radius: 5px;
+            color: white;
+            height: 50px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #icon{
+            margin-top: 200px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="fb-container">
+        <div class="login-container">
+            <div id="get">
+             <h1>Login</h1>
+             <p style="font-size: 20px;">Get access to your Orders, <br>
+                Wishlist and <br>
+                Recommendations</p>
+            </div>
+            <div id="icon">
+                <image src="C:\Users\swarn\Desktop\Full Stack Python\CSS\30-9-24 (Front End Exam 1)\download.png" height="80%" width="95%"/>
+            </div>
+        </div>
+
+
+        <div class="form-container">
+            <div id="otp-container">
+               <input type="text" value="Enter your Email or Mobile Number"/><br><br>
+               <p id="new1" style="color: black;"> By continuing, you agree to Flipkart's <a href="#" style="color: blue;"> Terms of 
+                Use </a> and <a href="#" style="color: blue;"> Privacy Policy </a></p><br>
+               <button>Request OTP</button>
+            </div>
+            <div id="para1">
+                <p id="new2"><a href="#" style="color: blue;">New to Flipkart? Create an Account <a href="#" style="color: blue;"></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
