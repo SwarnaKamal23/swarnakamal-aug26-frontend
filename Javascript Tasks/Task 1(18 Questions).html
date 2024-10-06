@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        .highlight{
+            color: blue;   /*Q14*/
+        }
+        
+    </style>
+</head>
+<body>
+    <p id="demo" >Q1) this is original content</p><br><br><!--Q1  Exercise 1: Change Text Content
+    Change the text content of a <p> element with the id "demo" to "Hello, DOM!".-->
+
+    <div id="myDiv">Q2) hello</div><br><br>  <!--Q2  Exercise 2: Change Element Style
+    Change the background color of a <div> element with the id "myDiv" to blue.-->
+
+    <div id="container">Q3) hello</div><br><br>  <!--Q3  Exercise 3: Add a New Element
+    Create a new <p> element with the text "This is a new paragraph." and append it to a <div> element with the id "container".-->
+
+    <p id="removeMe">Q4) i will be removed</p><br><br>    <!--Q4  Exercise 4: Remove an Element
+    Remove a <p> element with the id "removeMe" from the document.-->
+
+    <p id="changewhenclick">Q5) this is normal content still not changed</p>   <!--Q5  Exercise 5: Event Handling
+    Create a button that changes the text content of a <p> element when clicked.-->
+    <button type="button" onclick="clickmebro()">Q5) click me to change above para content</button><br><br>
+
+    <h2 id="myElement">Q6) select by id</h2><br><br>   <!--Q6  Exercise 1: Select by ID
+    Select the element with the ID "myElement" and change its text content to "I was selected by ID."-->
+
+    <h3 class="myClass">Q7) by myclass</h3>     <!--Q7  Exercise 2: Select by Class Name
+    Select all elements with the class name "myClass" and change their text content to "I was selected by class name."-->
+    <h3 class="myClass">Q7) by myclass</h3>
+    <h3 class="myClass">Q7) by myclass</h3><br><br>
+
+    <span>Q8) by tag</span>  <br>     <!--Q8  Exercise 3: Select by Tag Name
+    Select all <p> elements and change their text content to "I was selected by tag name."-->
+    <span>Q8) by tag</span><br>
+    <span>Q8) by tag</span><br><br>
+
+    <p class="qs">Q9) query selector</p>    <!--Q9  Exercise 4: Select by Query Selector
+    Select the first element with the class "special" and change its text content to "I was selected by query selector."-->
+    <p class="qs">Q9) query selector</p><br><br>
+
+    <p class="highlight">Q10) select and change multiple elements</p>   <!--Q10  Exercise 5: Select and Change Multiple Elements
+    Select all elements with the class "highlight" and change their background color to yellow.-->
+    <p class="highlight">Q10) select and change multiple elements</p>
+    <p class="highlight">Q10) select and change multiple elements</p><br><br>
+
+    <p id="myText">Q11) text color change</p><br><br>    <!--Q11  Exercise 1: Change Text Color
+    Change the text color of a <p> element with the ID "myText" to red.-->
+
+    <div id="myDDiv">Q12) change background color</div><br><br>   <!--Q12  Exercise 2: Change Background Color
+    Change the background color of a <div> element with the ID "myDiv" to green.-->
+
+    <p class="text">Q13) change font size</p>    <!--Q13  Exercise 3: Change Font Size
+    Change the font size of all <p> elements with the class "text" to 20 pixels.-->
+    <p class="text">Q13) change font size</p>
+    <p class="text">Q13) change font size</p>
+    <p class="text">Q13) change font size</p><br><br>
+
+    <p id="highlightMe">Q14) add a css class</p><br><br>  <!--Q14  Exercise 4: Add a CSS Class
+    Add a CSS class "highlight" to a <p> element with the ID "highlightMe" to change its text color to blue.-->
+
+    <button id="activateButton" class="inactive">Q15) click me</button><br><br>  <!--Q15 not clear   Exercise 5: Remove a CSS Class
+    Remove a CSS class "inactive" from a <button> element with the ID "activateButton" to make it active.-->  
+
+    <image id="myImage" src="nature.jpg" height="200px" width="200px"/><br><br>   <!--Q16 Exercise 1: Set an Attribute
+    Set the "src" attribute of an <img> element with the ID "myImage" to a new image URL.-->
+
+    <a id="myLink" href="#">Q17) get an attribute</a><br><br>  <!--Q17  Exercise 2: Get an Attribute
+    Get and display the "href" attribute of a <a> element with the ID "myLink" in an alert.-->
+
+    <button id="myButton" disabled>Q18) remove disabled attribute for this button</button>    <!--Q18  Exercise 3: Remove an Attribute
+    Remove the "disabled" attribute from a <button> element with the ID "myButton" to enable it.-->
+
+    <script>
+        let updatedpara= document.getElementById("demo")   /*Q1*/
+        updatedpara.innerHTML="Q1 Hello, DOM!"
+
+        let updateddiv= document.getElementById("myDiv")    /*Q2*/
+        updateddiv.style.backgroundColor="blue"
+
+        let newpara= document.createElement("p")     /*Q3*/
+        let newcontent= document.createTextNode("This is a new paragraph")
+        newpara.appendChild(newcontent)
+        container.appendChild(newpara)
+
+        let pararemove= document.getElementById("removeMe")   /*Q4*/
+        document.body.removeChild(pararemove)
+
+        function clickmebro()              /*Q5*/
+        {
+            let abcd= document.getElementById("changewhenclick")
+            abcd.innerHTML="content changed"
+        }
+
+        let updatedh2= document.getElementById("myElement")     /*Q6*/
+        updatedh2.innerHTML="Q6) I was selected by ID."
+
+        let updatedh3= document.getElementsByClassName("myClass")     /*Q7*/
+        // console.log(updatedh3)
+        // Loop through each element in the HTMLCollection
+        for (let i = 0; i < updatedh3.length; i++) {
+        updatedh3[i].innerHTML = "Q7) I was selected by class name.";
+        }
+
+        let allspan= document.getElementsByTagName("span")      /*Q8*/
+        for (let i = 0; i < allspan.length; i++) {
+        allspan[i].innerHTML = "Q8) I was selected by tag name.";
+        }
+
+        let updatedqs= document.querySelector(".qs")      /*Q9*/ 
+        updatedqs.innerHTML="Q9) I was selected by query selector"
+
+        /*when ever you use elements, even the first one doesnt gets updated, have to use for loop
+          when ever you use element, only the first one gets updated */
+
+        let multipleele= document.getElementsByClassName("highlight")  /*Q10*/ 
+        for(i=0;i<multipleele.length;i++){
+        multipleele[i].style.backgroundColor="yellow"
+        }
+
+        let redele=document.getElementById("myText")  /*Q11*/ 
+        redele.style.color="red"
+
+        let greenele=document.getElementById("myDDiv")  /*Q12*/ 
+        greenele.style.backgroundColor="green"
+
+        let fontsizeele= document.getElementsByClassName("text")   /*Q13*/ 
+        for(i=0;i<fontsizeele.length;i++){
+        fontsizeele[i].style.fontSize="20px"
+        }
+
+        let addclass= document.getElementById("highlightMe")   /*Q14*/
+        //console.log(addclass) 
+        addclass.classList.add("highlight")
+
+        let button= document.getElementById("activateButton")    /*Q15 not clear*/
+        //console.log(button)
+        button.classList.remove("inactive")
+
+        let newimage= document.getElementById("myImage")
+        newimage.setAttribute("src","wallpaperflare.com_wallpaper (4).jpg")   /*Q16*/
+
+        let cont= document.getElementById("myLink")   /*Q17*/
+        alert(cont.getAttribute("href"))
+
+        let cont1= document.getElementById("myButton")   /*Q18*/
+        cont1.removeAttribute("disabled")
+        
+    </script>
+</body>
+</html>
