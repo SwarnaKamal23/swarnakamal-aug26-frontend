@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-6</title>
+    <style>
+
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:center;
+           /* background: linear-gradient(to bottom, red, yellow, green, blue);*/
+            background: linear-gradient(45deg, rgb(31, 144, 219), rgb(178, 54, 209)); /*new - multiple colors 
+            that could be applied from any direction........first mention angle, then mention color sequence*/
+            /*background: linear-gradient(90deg, red 0%, rgb(52, 39, 235) 25%, green 50%, orchid 100%);    */    
+        }
+       
+        .main-container{
+            width: 45%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head{
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .body{
+            background-color: white;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .namediv{ 
+            display: flex;
+            width: 80%;
+            height: 42px;
+            justify-content: space-between;
+        }
+
+        #firstandlast{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        #fname{
+            width: 100%;
+        }
+
+        #ffname{
+            width: 46.5%;
+        }
+
+        #lname{
+            width: 100%;
+        }
+
+        #llname{
+            width: 46.5%;
+        }
+
+        .companydiv{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #com{
+            width: 79%;
+        }
+
+        .emaildiv{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #email{
+            width: 77%;
+            padding-left: 15px;  
+        }
+
+        .phonediv{
+            width: 80%;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #area{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        #ac{
+            width: 20%;
+        }
+        
+        #aacc{
+            width: 100%;
+        }
+        
+        #pn{
+            width: 72%;
+        }
+        
+        #ppnn{
+            width: 100%;
+        }
+
+        .subjectdiv{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;   
+        }
+
+        select{
+            width: 80%;
+            height: 43px;
+            border-radius: 5px;
+            background-color: #ccd1d1;
+            border: none;
+            padding-left: 15px;
+        }
+
+        .radiodiv{
+            width: 80%;
+        }
+
+        input{
+            height: 35px;
+            border-radius: 5px;
+            background-color: #ccd1d1;
+            border: none;
+        }
+       
+        .a1234{
+            margin-top: 5px;
+            color: #989b9b;
+        }
+
+        .align{
+            align-self: center;
+        }
+
+        button{
+            height: 40px;
+            width: 20%;
+            align-self: flex-start;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            margin-left: 77px;
+        }
+
+        #no{
+            margin-left: 50px;
+        }
+        
+        .aligntheradio{
+            position: relative;
+            top: 12px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+    <div class="head">
+        <h2>EVENT REGISTRATION FORM</h2>
+    </div>
+
+    <div class="body">
+        <div class="namediv">
+            <label class="align">Name</label>
+            <div id="firstandlast">
+                <div id="ffname">
+                    <input id="fname" type="text"/>
+                    <p class="a1234">First Name</p>
+                </div>
+                <div id="llname">
+                    <input id="lname" type="text"/>
+                    <p class="a1234">Last Name</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="companydiv">
+            <label class="align">Company</label>
+            <input id="com" type="text"/>
+        </div>
+
+        <div class="emaildiv">
+            <label class="align">Email</label>
+            <input id="email" type="email" placeholder="example@email.com"/>
+        </div>
+
+        <div class="phonediv">
+            <label class="align">Phone</label>
+            <div id="area">
+                <div id="ac">
+                    <input id="aacc" type="number"/>
+                    <p class="a1234">Area Code</p>
+                </div>
+                <div id="pn">
+                    <input id="ppnn" type="tel"/>
+                    <p class="a1234">Phone Number</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subjectdiv">
+            <label class="align">Subject</label>
+            <select>
+                <option selected disabled>Choose Option</option>
+                <option>Dance</option>
+                <option>Song</option>
+            </select>
+        </div>
+
+        <div class="radiodiv">
+            <label>Are you an existing customer ?</label><br>
+            <input class="aligntheradio" type="radio" checked/> Yes
+            <input  class="aligntheradio" id="no" type="radio"/> No
+        </div>
+
+        <button type="button">REGISTER</button>
+    </div>
+    </div>
+
+
+    <div>
+        <h1 style="color: rgb(255, 95, 95); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

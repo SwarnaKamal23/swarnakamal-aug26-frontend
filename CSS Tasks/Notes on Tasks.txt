@@ -1,0 +1,58 @@
+Below are all the new styles/concepts that I have come across during the css tasks. I have implemented all these somewhere.
+
+1) height: 100vh;
+   margin: 0px;  give this inside body because by default height it will take based on the content height.
+
+2) border-top-left-radius: 5px;   ------->  /*new - to control top left corner of border radius*/
+   border-bottom-left-radius: 5px; ------> /*new*/
+
+3) box-shadow: -5px 5px 10px 4px rgb(209, 204, 204); -----> /*new- to get shadow for div blocks 
+               sequence----Horizontal offset (shadow moves -5px to the right).
+                           Vertical offset (shadow moves 5px down).
+                           Blur radius ( 10px how blurry the shadow is).
+                           Spread radius ( 4px controls the size of the shadow).
+                           Color of the shadow.*/
+
+4) gap: 20px 0px; ------>  /*new- for getting gaps b/t rows in flex wrap concept (or) can even use normally when taking flex.*/
+Single Value: gap: 20px; applies the same gap to both rows and columns.
+Two Values: gap: 20px 0px; specifies the row gap first, followed by the column gap.
+
+5) inside icons  ----> to get exact circle shape background, take radius as 15 and adjust font size and padding
+   note: to use icons, first copy link for icons in head, later copy icons class 
+         and paste where ever you want, and adjust margin or vertical align,etc accordingly
+
+6)  ul {
+            list-style: none; ------>    /* new - Remove default bullets in lists */
+            padding: 0px;
+        }
+
+7) when you want 4 lists in one col, and next 4 lists in next col to the right side, take two different <ul> tags, use display: inline-block for
+ both tags and use Vertical-align top for both tags
+
+8) <input type="date" id="bir" style="color: transparent;" name="bir"> -----> <!-- new-- give color transparent to make dd-mm-yy gone-->
+
+9) overflow: hidden; --->   /*new - without this, if even border radius applied to container, image corners will go outside 
+            of the container, so use overflow hidden (what ever content outside of container is hidden) */
+
+10) background: linear-gradient(to bottom, red, yellow, green, blue);
+      Remember this mainly: background: linear-gradient(45deg, rgb(31, 144, 219), rgb(178, 54, 209)); ----> new - multiple colors 
+            that could be applied from any direction........first mention angle, then mention color sequence
+            background: linear-gradient(90deg, red 0%, rgb(52, 39, 235) 25%, green 50%, orchid 100%);       
+
+11) i{
+            position: relative; ---->   /*use this to align icons inside input box*/
+            right: 25px;
+        }
+
+12)  <a href="#" id="view">View All Stories <span id="arrow">&#8594;</span></a>  ----->  <!--to use symbols like right arrow, copy its hex code where ever
+                                                                             you want, and to control its properties like color,etc, put it inside span tag-->
+
+13)  img{       ------>          /*new, to make image occupy entire div block*/
+            width: 100%;
+            height: 100%;
+        }
+    note: even works for iframe 
+    iframe{
+            height: 100%;
+            width: 100%;
+        }

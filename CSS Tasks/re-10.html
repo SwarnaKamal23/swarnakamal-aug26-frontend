@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-10</title>
+
+    <style>
+
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(90deg, grey,rgb(204, 202, 202), grey);
+        }
+
+        .main-container{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            border: 1px solid rgb(78, 78, 78);
+            padding-bottom: 40px;
+        }
+
+        .mainhead{
+            width: 90%;
+        }
+       
+        .same1{
+            display: flex;
+            gap: 10px;
+        }
+
+        input{
+            height: 30px;
+        }
+
+        select{
+            height: 35px;
+        }
+
+        textarea{
+            height: 35px;
+            width: 99.5%;
+        }
+
+        .names{
+            width: 100%;
+        }
+
+        .bandg{
+            display: flex;
+        }
+
+        .commonhead{
+            display: flex;
+            gap: 60px
+        }
+
+        .chh{
+            width: 50%;
+        }
+
+        #second{
+            display: flex;
+            gap: 20px;
+        }
+
+        .sel{
+            width: 100%;
+        }
+
+        #gen{
+            width: 100%;
+        }
+
+        #mdy{
+            width: 49%;
+            display: flex;
+        }
+
+        .adown{
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .mandp{
+            width: 98.5%;
+        }
+
+        .cc{
+            width: 94.5%;
+        }
+
+        #last{
+            width: 1050px;
+            height: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #sub{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button{
+            width: 30%;
+            height: 45px;
+            border-radius: 5px;
+            background-color: rgb(9, 209, 9);
+            color: white;
+            border: none;
+            border: 2px solid white;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="mainhead">
+            <h1>Student Registration Form</h1>
+            <p>Fill out the form carefully for registration</p>
+        </div><br><br>
+
+        <div class="mainhead">
+            <h3 id="s1">Student Name</h3>
+            <div class="same1">
+            <input class="names" type="text"/>
+            <input class="names" type="text"/>
+            <input class="names" type="text"/>
+            </div>
+            <div class="same1">
+            <p  class="names">First Name</p>
+            <p  class="names">Middle Name</p>
+            <p  class="names">Last Name</p>
+            </div>
+        </div>
+
+        <div class="mainhead">
+            <div class="commonhead">
+                <div class="chh">
+                    <h3>Birth Date</h3>
+                </div>
+                <div class="chh">
+                    <h3>Gender</h3>
+                </div>
+            </div>
+            <div class="commonhead">
+                <div class="chh" id="second">
+                    <select class="sel">
+                        <option>01</option>
+                        <option>02</option>
+                    </select>
+                    <select class="sel">
+                        <option>01</option>
+                        <option>02</option>
+                    </select>
+                    <select class="sel">
+                        <option>01</option>
+                        <option>02</option>
+                    </select>
+                </div>
+                <div class="chh">
+                    <select id="gen">
+                        <option>Please Select</option>
+                        <option>01</option>
+                        <option>02</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mdy">
+                <p  class="names">Month</p>
+                <p  class="names">Day</p>
+                <p  class="names">Year</p>
+            </div>
+        </div>
+
+        <div class="mainhead">
+            <h3>Address</h3>
+            <textarea></textarea>
+            <p class="adown">Street Address</p>
+
+            <textarea></textarea>
+            <p class="adown">Street Address Line 2</p>
+
+            <div class="commonhead">
+                <div class="chh">
+                    <textarea></textarea>
+                    <p class="adown">City</p>
+                </div>
+                <div class="chh">
+                    <textarea></textarea>
+                    <p class="adown">State Province</p>
+                </div>
+            </div>
+
+            <textarea></textarea>
+            <p class="adown">Postal Zip Code</p>
+        </div>
+
+            <div class="mainhead">
+                <div class="commonhead">
+                    <div class="chh">
+                    <h3>Student E-Mail</h3>
+                    <input class="mandp" type="email" placeholder="ex: myname@example.com"/>
+                    <p class="adown">someone@example.com</p>
+                    </div>
+                    <div class="chh">
+                    <h3>Mobile Number</h3>
+                    <input class="mandp" type="tel" placeholder="(000) 000-0000"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainhead">
+                <div class="commonhead">
+                    <div class="chh">
+                    <h3>Phone Number</h3>
+                    <input class="mandp" type="tel" placeholder="(000) 000-0000"/>
+                    </div>
+                    <div class="chh">
+                    <h3>Work Number</h3>
+                    <input class="mandp" type="tel" placeholder="(000) 000-0000"/>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="mainhead">
+                <div class="cc">
+                    <div class="chh">
+                    <h3>Company</h3>
+                    <input class="mandp" type="text"/>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="mainhead">
+                <div class="cc">
+                    <div class="chh">
+                    <h3>Courses</h3>
+                    <select id="gen">
+                        <option>Please Select</option>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                    </select>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="mainhead">
+                <div class="cc">
+                    <div class="chh">
+                    <h3>Additional Comments</h3>
+                    <textarea id="last" placeholder="Type here....."></textarea>
+                    </div>
+                </div>
+            </div><br><br><br>
+
+            <div id="sub" class="mainhead"> 
+                <button type="button">Submit Application</button>
+                <button type="reset">Clear Fields</button>
+            </div>
+
+    </div>
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

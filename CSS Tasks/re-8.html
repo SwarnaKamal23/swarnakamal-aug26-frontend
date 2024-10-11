@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-8</title>
+    <style>
+
+         body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container{
+            height: 90%;
+            width: 85%;
+            display: grid;
+            grid-template-columns: 25% 80%;
+            grid-template-rows: 65% 35%;
+            margin-top: 10px;
+        }
+
+        .first{
+            grid-row: 1/3;
+        }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .third{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .common{
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+        }
+
+        .mini1{
+            width: 47%;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+
+        select{
+            width: 100%;
+            height: 45px;
+            box-sizing: border-box;
+            padding-left: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 2px solid gray;
+        }
+
+        h4{
+            margin-bottom: 0px;
+        }
+
+        .cash{
+            height: 20px;
+            width: 20px;
+            margin-right: 7px;
+            position: relative;
+            top: 5px;
+        }
+
+        #ch1{
+            margin-left: 50px;
+        }
+
+        #ch2{
+            margin-left: 50px;
+        }
+
+        span{
+            margin-left: 210px;
+            font-size: 15px;
+        }
+
+        #pd{
+            margin-left: 221px;
+        }
+
+        h1{
+            margin-top: 10px;
+        }
+
+        .common1{
+            width: 85%;
+        }
+
+        button{
+            height: 50px;
+            width: 130px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 2px solid gray;
+            margin-left: 20px;
+        }
+
+        #bottomdiv{
+            width: 26.5%;
+            align-self: flex-end;
+            margin-right: 83px;
+        }
+
+        #sub{
+            background-color: rgb(39, 39, 240);
+            color: white;
+        }
+
+        #star{
+            color: red;
+            margin-left: 0px;
+        }
+
+        a{
+            color: black;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="first">
+            <image src="C:\Users\swarn\Desktop\Full Stack Python\CSS\CSS Tasks\re-8 updated image.PNG"/>
+        </div>
+
+        <div class="second">
+            <div id="lol" class="common">
+                <div class="mini1">
+                    <h4>FIRST NAME <span id="star">*</span></h4>
+                    <input required type="text" placeholder="kamal"/>
+                </div>
+                <div class="mini1">
+                    <h4>MEAL PREFERENCE <span><a href="#">Lunch Details</a></span></h4>
+                    <select>
+                        <option>Vegetarian</option>
+                        <option>Non-Vegetarian</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="common">
+                <div  class="mini1">
+                    <h4>LAST NAME <span id="star">*</span></h4>
+                    <input required type="text"/>
+                </div>
+                <div class="mini1">
+                    <h4>PAYMENT MODE <span id="pd"><a href="#">Payment Details</a></span></h4>
+                    <input checked class="cash" type="radio"/> Cash
+                    <input id="ch1" class="cash" type="radio"/> Cheque
+                    <input id="ch2" class="cash" type="radio"/> Demand Draft
+                </div>
+            </div>
+
+            <div class="common">
+                <div  class="mini1">
+                    <h4>COMPANY <span id="star">*</span></h4>
+                    <input required type="text"/>
+                </div>
+                <div  class="mini1">
+                    <h4>DD/CHEQUE NO.</h4>
+                    <input type="number"/>
+                </div>
+            </div>
+
+            <div class="common">
+                <div class="mini1">
+                    <h4>EMAIL <span id="star">*</span></h4>
+                    <input required type="text"/>
+                </div>
+                <div   class="mini1">
+                    <h4>DRAWN ON (BANK NAME)</h4>
+                    <input type="text"/>
+                </div>
+            </div>
+
+            <div class="common">
+                <div  class="mini1">
+                    <h4>PHONE NUMBER <span id="star">*</span></h4>
+                    <input required type="tel"/>
+                </div>
+                <div  class="mini1">
+                    <h4>PAYABLE AT</h4>
+                    <input type="text"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <div  class="common1">
+                <h3>- DONATE US</h3>
+                <input type="range"/>
+            </div>
+            <div  id="bottomdiv">
+                <button id="sub" type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

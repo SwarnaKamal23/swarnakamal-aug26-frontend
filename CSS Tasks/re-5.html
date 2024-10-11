@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-5</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 98vh;
+            background-color: rgb(228, 156, 247);
+        }
+
+        .main-container{
+            background-color: red;
+            width: 45%;
+            height: 500px;
+            display: flex;
+            box-shadow: 0px 0px 20px 5px black;
+        }
+
+        .image-container{
+            background-color: blue;
+            width: 50%;
+        }
+
+        .form-container{
+            background-color: black;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        input{
+            border: none;
+            background-color: black;
+            color: white;
+            border-bottom: 2px solid white;
+            padding: 10px 10px 10px 0px;
+            width: 70%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #sub{
+            border: 2px solid rgb(11, 202, 11);
+            border-radius: 50px;
+            background-color: rgb(11, 202, 11);
+            color: white;
+            margin-bottom: 20px;
+            width: 35%;
+            margin-right: 150px;
+        }
+      
+        #info{
+            margin-bottom: 0px;
+            margin-right: 50px;
+        }
+
+        select{
+            border: none;
+            background-color: black;
+            color: white;
+            border-bottom: 2px solid white;
+            padding: 10px 10px 10px 0px;
+            width: 73%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #phone{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+           <image src="C:\Users\swarn\Desktop\Full Stack Python\CSS\CSS Tasks\re-5 updated image.PNG" height="500px" width="380px"/>
+        </div>
+
+        <div class="form-container">
+            <h1 id="info">Registration Info</h1>
+            <input type="text" value="Name"/>
+            <input type="datetime" value="Birthday"/>
+            <select>
+                <option selected disabled>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input type="email" value="Email"/>
+            <input id="phone" type="tel" value="Phone"/>
+            <input id="sub" type="submit" value="Submit"/>
+        </div>
+    </div><br><br><br><br>
+
+    <div>
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

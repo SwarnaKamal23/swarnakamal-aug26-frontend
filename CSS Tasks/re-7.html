@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-7</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0px;
+            align-items: flex-start;
+            justify-content: flex-end;
+            background-color: black;
+            background-image: url('re-7 image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .main-container{
+            background-color: red;
+            height: 85%;
+            width: 35%;
+            margin-left: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        
+        h2{
+            margin-right: 75px;
+        }
+
+        input, select{
+            height: 30px;
+            width: 80%;
+            padding-left: 0px;
+            border: none;
+            border-bottom: 2px solid rgb(189, 171, 171);
+        }
+
+        #how{
+            margin-right: 238px;
+        }
+
+        #agreebox{
+            height: 15px;
+            width: 15px;
+            position: relative;
+            top: 3px;
+        }
+       
+        #agree{
+            margin-right: 220px;
+        }
+
+        button{
+            height: 7%;
+            width: 30%;
+            margin-right: 293px;
+            background-color: rgb(55, 55, 194);
+            color: white;
+            border-radius: 5px;
+            border: 2px solid rgb(27, 27, 223) ;
+            box-shadow: 0px 0px 10px 2px rgb(189, 171, 171);
+        }
+
+        a{
+            color: black;
+        }
+
+        #kamal{
+            border-bottom: 2px solid blue;
+        }
+      
+        #ssk{
+            margin-left: 270px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h2>EDUCATION APPOINTMENT FORM</h2>
+        <input type="text" placeholder="Title"/>
+        <input id="kamal" type="text" value="Swarna Kamal"/>
+        <input type="email" placeholder="Email"/>
+        <input type="number" placeholder="Phone Number"/>
+        <select>
+            <option selected disabled>Course Type</option>
+            <option>ECE</option>
+            <option>CSE</option>
+            <option>Mechanical</option>
+            <option>Aero</option>
+        </select>
+        <p id="how"><b>How would you like to be located ?</b></p>
+        <select>
+            <option selected>By phone</option>
+            <option>By Tel</option>
+            <option>By Audio call</option>
+        </select>
+         <select>
+            <option selected>Hours: 8am 10pm</option>
+            <option>Hours: 12pm 10pm</option>
+            <option>Hours: 3pm 12pm</option>
+        </select>
+        <p id="agree"><input id="agreebox" type="checkbox"/> I agree to the <a href="#"><b>Terms and Conditions</b></a></p>
+        <button type="button">Request an appointment</button>
+    </div>
+
+    <div id="ssk">
+        <h1 style="color: rgb(0, 255, 34); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: black;">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>C-3</title>
+    <style>
+
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container{
+            display:grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 55% 45%;
+            height: 90%;
+            width: 80%;
+        }
+
+        .div1{
+            grid-column: 1/3;  
+        }
+
+        .div2{
+            display: flex;
+            align-items: center; 
+            padding-bottom: 57px;
+        }
+      
+        #form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 88%;
+            padding: 40px 0px 20px 0px;
+            box-sizing: border-box;
+        }
+
+        #send{
+            height: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        button{
+            height: 100%;
+            width: 20%;
+            border-radius: 50px;
+            background-color: red;
+            color: white;
+            border: transparent;
+        }
+
+        .nameandmail{
+            width: 47%;
+            height: 15%;
+            margin: 0px;
+            padding-left: 10px;
+        }
+
+        #sub{
+            width: 100%;
+            height: 15%;
+            margin: 0px;
+            padding-left: 10px;
+        }
+
+        textarea{
+            padding-left: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: red;
+        }
+
+        .cent{
+            text-align: center;
+        }
+
+        #pll{
+            margin-bottom: 0px;
+        }
+
+        #ooo{
+            margin-bottom: 25px;
+        }
+
+        .list{
+            margin-top: 5px;
+        }
+
+        h2{
+            margin-bottom: 0px;
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0px;
+        }
+       
+       i{   /*to get exact circle shape background, take radius as 15 and adjust font size and padding*/
+          border: 2px solid transparent;
+          background-color: antiquewhite;
+          border-radius: 15px;
+          font-size: 20px;                
+          margin-right: 13px;
+          padding: 5px;
+          color: red;
+       }
+
+        .exp{
+            display: flex;
+        }
+
+        .lol{
+            display: flex;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="div1">
+            <h1 id="pll" class="cent">Contact <a href="#">Us</a></h1>
+            <p id="ooo" class="cent">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                 Lorem Ipsum <br>has been the industry's standard dummy text ever since the</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4833737752783!2d78.3893454!3d17.4844243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb919ef6c7c09d%3A0xe03175b81113bc71!2sNexus%20Hyderabad%20Mall!5e0!3m2!1sen!2sin!4v1728212471450!5m2!1sen!2sin" width="100%" height="309" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+
+        <div class="div2">
+            <ul>
+                <li>
+                    <div class="exp">
+                    <div class="lol">
+                    <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div>
+                    <h2>Location:</h2>
+                    <p class="list">A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp">
+                    <div class="lol">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                    <h2>Email:</h2>
+                    <p class="list">info@example.com</p>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="exp">
+                    <div class="lol">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div>
+                    <h2>Call:</h2>
+                    <p class="list">+1 5589 55488 55s</p>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="div3">
+            <div id="form">
+            <input class="nameandmail" type="text" placeholder="Your Name"/>
+            <input class="nameandmail" type="email" placeholder="Your Email"/>
+            <input id="sub" type="text" placeholder="Subject"/>
+            <textarea placeholder="Message" rows="6" cols="108"></textarea>
+            </div>
+            <div id="send">
+            <button type="button">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

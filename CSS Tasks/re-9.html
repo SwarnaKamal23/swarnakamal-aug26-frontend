@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>re-9</title>
+    <style> 
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 98vh;
+            background-image: url('re------9.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .main-container{
+            width: 50%;
+            height: 500px;
+            background-color: white;
+            display: flex;
+        }
+
+        .image-container{
+            width: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container{
+            width: 50%;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .common{
+            width: 82%;
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 10px 10px 10px 0px;
+            margin-left: 25px;
+        }
+
+        button{
+            width: 35%;
+            height: 8%;
+            margin-bottom: 40px;
+            background-color: black;
+            color: white;
+        }
+
+        h2{
+            margin-bottom: 0px;
+            margin-top: 40px;
+        }
+
+        #first{
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 10px 10px 10px 0px;
+
+        }
+
+        #last{
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 10px 10px 10px 0px;
+
+        }
+
+        #conpas{
+            margin-bottom: 15px;
+        }
+
+        #gen{
+            width: 85%;
+            margin-right: 25px;
+        }
+
+        span{
+            font-size: 20px;
+            margin-left: 7px;
+        }
+
+        i{
+            position: relative;   /*use this to align icons inside input box*/
+            right: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+            <image src="C:\Users\swarn\Desktop\Full Stack Python\CSS\CSS Tasks\re-9 updated image.PNG" width="380px" height="460px"/>
+        </div>
+
+        <div class="form-container">
+            <h2>REGISTRATION FORM</h2>
+            <input id="first" type="text" placeholder="First Name"/>
+            <input id="last" type="text" placeholder="Last Name"/>
+            <input class="common" type="text" placeholder="Username"/><i class="bi bi-person"></i>
+            <input class="common" type="email" placeholder="Email Address"/><i class="bi bi-envelope"></i>
+            <select id="gen" class="common">
+                <option selected disabled>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <input class="common" type="password" placeholder="Password"/><i class="bi bi-lock"></i>
+            <input id="conpas" class="common" type="password" placeholder="Confirm Password"/> <i class="bi bi-lock"></i>
+            <button>Register<span>&#8594;</span></button>  
+        </div>
+    </div><br><br><br><br>
+
+    <div>
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

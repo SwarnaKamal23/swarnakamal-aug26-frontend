@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-15</title>
+    <style>
+
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 15% 85% ;
+            height: 90%;
+            width: 55%;
+        }
+
+        input{
+            height: 35px;
+        }
+
+        .div1{
+            grid-column: 1/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-right: 2px solid gray;
+            font-size: 20px;
+        }
+
+        .div3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .singleline{
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .singleline input{
+            width: 60%;
+        }
+
+        .double{
+            width: 83%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .double input{
+            width: 100%;
+        }
+
+        .name{
+            width: 83%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .name input{
+            width: 44%;
+        }
+
+        .preferred{
+            width: 83%;
+            display: flex;
+            justify-content:space-between;
+        }
+
+        #firstandlast{
+            display: flex;
+            justify-content: space-between;
+            width: 61.5%;
+        }
+
+        #level{
+            width: 83%; 
+        }
+
+        #level input{
+            height: 20px;
+            width: 30px;
+            position: relative;
+            top: 4px;
+        }
+
+        #des{
+            height: 18%;
+            padding-top: 10px;
+        }
+
+        #des input{
+            height: 100%;
+        }
+
+        #sample{
+            height: 35px;
+            width: 57%;
+            padding-left: 13px;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="div1">
+            <h1>Sponsor Registration</h1>
+        </div>
+
+
+        <div class="div2">
+            <div class="singleline">
+                <label>Prefix</label>
+                <input type="text"/>
+            </div>
+
+            <div class="name">
+                <label>Name</label>
+                <div id="firstandlast">
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/>
+                </div>
+            </div>
+
+            <div class="preferred">
+                <label>Preferred Pronouns</label>
+                <input type="text"/>
+            </div>
+
+            <div class="singleline">
+                <label>Email</label>
+                <input id="sample" type="text" placeholder="sample@example.com"/>
+            </div>
+
+            <div class="singleline">
+                <label>Work Phone</label>
+                <input type="number"/>
+            </div>
+
+            <div class="singleline">
+                <label>Cell Phone</label>
+                <input type="tel"/>
+            </div>
+
+            <div class="singleline">
+                <label>Job Title</label>
+                <input type="text"/>
+            </div>
+
+            <div class="singleline">
+                <label>Company</label>
+                <input type="text"/>
+            </div>
+
+            <div class="double">
+                <label>Full Business Address</label>
+                <input type="text"/>
+            </div>
+
+            <div class="double">
+                <label>Company Website</label>
+                <input type="text"/>
+            </div>
+        </div>
+
+
+        <div class="div3">
+            <div id="des" class="double">
+                <label>Company Description</label>
+                <input type="text"/>
+            </div>
+
+            <div class="double">
+                <label>Company Facebook Page</label>
+                <input type="text"/>
+            </div>
+
+            <div class="double">
+                <label>Company Twitter Handle</label>
+                <input type="text"/>
+            </div>
+
+            <div class="double">
+                <label>Company LinkedIn Handle</label>
+                <input type="text"/>
+            </div>
+
+            <div id="level">
+                <label>Sponsorship Level</label><br>
+                <input type="radio"/> Gold<br>
+                <input type="radio"/> Diamond<br>
+                <input type="radio"/> Platinum<br>
+            </div>
+
+            <div class="double">
+                <label>Additional Guests (name, email)</label>
+                <input type="text"/>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-3</title>
+    <style>
+         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 98vh;
+            background-color: rgb(53, 109, 214);
+        }
+        .main-container{
+            width:40%;
+            height: 700px;
+            
+            display: flex;
+            flex-direction: column;
+        
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 5px black;
+        }
+
+        .image-container{
+            height: 210px;
+            
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;   
+        }
+
+        .form-container{
+            background-color: white;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+           justify-content: space-between;
+            align-items: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .form{
+            width: 80%;
+            height: 68%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #name{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid rgb(155, 146, 146);
+            padding-left: 0px;
+            height: 9%;
+        }
+
+        #birth{
+            width: 45%;
+            border: none;
+            border-bottom: 2px solid rgb(155, 146, 146);
+            padding-left: 0px;
+            height: 9%;
+            margin-right: 40px;    
+        }
+
+        #gender{
+            width: 45%;
+            border: none;
+            border-bottom: 2px solid rgb(155, 146, 146);
+            height: 10%;
+        }
+
+        #class{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid rgb(155, 146, 146);
+            padding-left: 0px;
+            height: 9%;
+        }
+
+        #code{
+            width: 45%;
+            border: none;
+            border-bottom: 2px solid rgb(155, 146, 146);
+            height: 9%;
+        }
+       
+        button{
+            width: 16%;
+            height: 8%;
+            margin-right: 430px;
+            margin-bottom: 75px;
+            border-radius: 5px;
+            border: 2px solid rgb(65, 185, 65);
+            color: white;
+            background-color: rgb(65, 185, 65);
+        }
+
+       #info{
+           margin-top: 60px;
+           margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+             <image src="C:\Users\swarn\Desktop\Full Stack Python\CSS\CSS Tasks\re-3 updated image.PNG" height="211px" width="676.5px"/>
+        </div>
+
+        
+        <div class="form-container">
+            <div class="form">
+            <h1 id="info">Registration Info</h1>
+            <input id="name" type="text" placeholder="NAME"/>
+            <input id="birth" type="datetime" placeholder="BIRTHDATE"/>
+            <select id="gender" class="not">
+                <option disabled selected>GENDER</option>
+                <option >Male</option>
+                <option >Female</option>
+            </select>
+            <select id="class">
+                <option selected>CLASS</option>
+                <option >Class 1</option>
+                <option >Class 2</option>
+            </select>
+            <input id="code" type="number" placeholder="REGISTRATION CODE"/>
+            </div>
+
+
+            <button>Submit</button>
+        </div>
+        
+     </div><br>
+
+    <div>
+        <h1 style="color: yellow; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+
+    
+    
+</body>
+</html>

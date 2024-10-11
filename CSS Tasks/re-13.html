@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-13</title>
+    <style>
+
+         body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container{
+            width: 90%;
+        }
+
+        .internal{
+            height: 90px;
+            display: grid;
+            grid-template-columns: 15% 28.4% 28.3% 28.3%;
+            grid-template-rows: 40px 50px;
+            border: 2px solid black;
+            border-bottom: 4px solid black
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        #only{
+            grid-row: 1/3;
+            border-bottom: none;
+        }
+
+        .veninp{
+            border: none;
+            border-right: 2px solid black ;   
+        }
+
+        #venninp{
+            border: none;
+        }
+
+        #dpp{
+            border-right: none;
+        }
+
+        .vendor{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 30px 50px 30px 50px 30px 50px 30px 50px 30px 50px;
+            border: 2px solid black;
+        }
+
+        #exp{
+            grid-column: 1/3;
+        }
+       
+        .lol{
+            display: flex;
+            align-items: center;
+            padding-left: 10px; 
+        }
+
+        #oll{ 
+            border-left: 2px solid black;
+        }
+       
+        .c1{
+            border-bottom: 2px solid black;
+        }
+
+        input{
+        border: none;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black ;
+        }
+
+        #ttt{
+        border-left: 2px solid black ;
+        }
+
+        h2,p{
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        }
+
+        textarea{
+        width: 99.5%;
+        border: 2px solid black;
+        border-bottom: 4px solid black;
+        }
+
+       .fee{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 20% 5% 20% 5% 20% 5% 5% 20%;
+        grid-template-rows: 30px 50px 40px 30px 50px;
+        border: 2px solid black;
+       }
+
+       #mpt{
+        grid-column: 2/9;
+        border-right: none;
+       }
+
+       #noc{
+        grid-column: 1/4;
+        border-top: 2px solid black;
+        border-right: 2px solid black ;
+       }
+
+       #ccn{
+        grid-column: 4/6;
+        border-top: 2px solid black;
+        border-right: 2px solid black ;
+       }
+
+       #cc{
+        grid-column: 7/9;
+        border-left: 2px solid black;
+        border-right: none;
+       }
+
+       #ed{
+        grid-column: 6/8;
+        border-top: 2px solid black;
+        border-right: 2px solid black ;
+       }
+
+       .centerrr{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border-right: 2px solid black;
+       }
+
+       #se{
+        border-top: 2px solid black;
+       }
+
+       .cent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       #ch{
+        border-left: 2px solid black;
+       }
+
+       #mo{
+        border-left: 2px solid black;
+       }
+
+       #nnn{
+        border-right: 2px solid black;
+       }
+      
+       #here{
+        margin-top: 3px;
+        font-size: 25px;
+       }
+
+       .down{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 25px 50px 25px 50px;
+        border-bottom: 4px solid black;
+        border: 2px solid black;
+       }
+
+       .ctr{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        border: 2px solid black;
+       }
+
+       #ne{
+       border: none;
+       }
+
+       #te{
+        border: none;
+        border-left: 2px solid black;
+       }
+
+       #see{
+       border: none;
+       }
+
+       #de{
+       border: none;
+       border-left: 2px solid black;
+       }
+
+       #tt{
+        border-left: 2px solid black
+       }
+
+       #fe{
+        border-bottom: none
+       }
+
+       #dt{
+        border-bottom: none;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 style="color: rgb(90, 89, 89);">COMMERCIAL VENDOR APPLICATION</h1>
+
+        <div class="internal">
+            <div style="color: rgb(90, 89, 89);background-color: rgb(208, 240, 255);" id="only" class="center">INTERNAL USE ONLY</div>
+            <div class="center" style="background-color: rgb(208, 240, 255)">VENDOR ID</div>
+            <div class="center" style="background-color: rgb(208, 240, 255)">DATE RECEIVED</div>
+            <div id="dpp" class="center" style="background-color: rgb(208, 240, 255)">DATE PAYMENT PROCESSED</div>
+            <input class="veninp" type="number"/>
+            <input class="veninp" type="date"/>
+            <input id="venninp" type="date"/>
+        </div>
+
+        <h2 style="color: rgb(90, 89, 89);">VENDOR INFORMATION</h2>
+        <div class="vendor">
+            <div class="lol" id="exp" style="background-color: rgb(208, 240, 255)">COMPANY NAME</div>
+            <input id="exp" type="text"/>
+            <div class="lol" style="background-color: rgb(208, 240, 255)">CONTACT NAME</div>
+            <div class="lol" id="ttt" style="background-color: rgb(208, 240, 255)">TITLE</div>
+            <input type="text"/>
+            <input id="oll" type="text"/>
+            <div class="lol" id="exp" style="background-color: rgb(208, 240, 255)">ADDRESS</div>
+            <input id="exp" type="text"/>
+            <div class="lol" style="background-color: rgb(208, 240, 255)">PHONE</div> 
+            <div class="lol" id="ttt" style="background-color: rgb(208, 240, 255)">EMAIL</div>
+            <input type="tel"/>
+            <input id="ttt" type="email"/>
+            <div class="lol" style="background-color: rgb(208, 240, 255)">FAX</div>
+            <div class="lol" id="ttt" style="background-color: rgb(208, 240, 255)">WEBSITE</div>
+            <input type="text"/>
+            <input id="ttt" type="text"/>
+        </div>
+
+        <h2 style="color: rgb(90, 89, 89);">SCOPE OF WORK</h2>
+        <p style="color: rgb(90, 89, 89);">Please provide details regarding the offerings of your organization.</p><br>
+        <textarea  rows="7"></textarea>
+
+        <h2 style="color: rgb(90, 89, 89);">FEE INFORMATION</h2>
+        <p style="color: rgb(90, 89, 89);">NSF fees are $25.00 per returned check.</p>
+        <div class="fee">
+            <div class="centerrr" style="background-color: rgb(218, 204, 204)">FEE AMOUNT</div>
+            <div class="centerrr" id="mpt" style="background-color: rgb(218, 204, 204)">MADE PAYABLE TO</div>
+            <input id="nnn" type="number"/>
+            <input id="mpt" type="text"/>
+            <div class="centerrr" style="background-color: rgb(208, 240, 255)">PAYMENT METHOD</div>
+            <div></div>
+            <div id="ch" class="centerrr" style="background-color: rgb(208, 240, 255)">CHECK</div>
+            <div></div>
+            <div id="mo" class="centerrr" style="background-color: rgb(208, 240, 255)">MONEY ORDER</div>
+            <div></div>
+            <div class="centerrr" id="cc" style="background-color: rgb(208, 240, 255)">CREDIT CARD</div>
+            <div class="centerrr" id="noc" style="background-color: rgb(230, 246, 255)">NAME ON CARD</div>
+            <div  class="cent" id="ccn" style="background-color: rgb(230, 246, 255)">CREDIT CARD NUMBER</div>
+            <div  class="cent" id="ed" style="background-color: rgb(230, 246, 255)">EXP. DATE</div>
+            <div  class="cent" id="se" style="background-color: rgb(230, 246, 255)">SECURITY CODE</div>
+            <input id="noc" type="text"/>
+            <input id="ccn" type="number"/>
+            <input id="ed" type="date"/>
+            <input type="number"/>
+        </div>
+
+        <h2 style="color: rgb(90, 89, 89);">CERTIFICATION</h2>
+        <p style="color: rgb(90, 89, 89);" id="here">I hereby affirm that all information supplied is true and accurate to the best of my 
+            knowledge and belief, and I understand that this information will be considered material
+            in the evaluation of quotations, bids, and proposals. Notice must be given of any change
+            in status impacting the information provided within ten (10) days of said change.
+        </p><br><br>
+
+        <div class="down">
+            <div id="ne" class="ctr" style="background-color: rgb(218, 204, 204)">NAME</div>
+            <div id="te" class="ctr" style="background-color: rgb(218, 204, 204)">TITLE</div>
+            <input type="text"/>
+            <input id="tt" type="text"/>
+            <div id="see" class="ctr" style="background-color: rgb(218, 204, 204)">SIGNATURE</div>
+            <div id="de" class="ctr" style="background-color: rgb(218, 204, 204)">DATE</div>
+            <input id="fe" type="file"/>
+            <input  id="dt" type="date"/>
+        </div>
+    </div>
+
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

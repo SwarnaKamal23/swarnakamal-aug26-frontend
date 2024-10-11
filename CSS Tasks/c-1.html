@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>c-1</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;  /*new- give this inside body because by default height it will take based on the content height.*/
+            background-color: rgb(216, 233, 236);
+        }
+
+        .main-container{
+            width: 60%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form-container{
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-container{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            height: 500px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+        }
+
+        #forms{
+            height: 470px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-top-left-radius: 5px;  /*new - to control top left corner of border*/
+            border-bottom-left-radius: 5px; /*new*/
+            background-color: white;
+            box-shadow: -5px 5px 10px 4px rgb(209, 204, 204); /*new- to get shadow for div blocks 
+               sequence----Horizontal offset (shadow moves -5px to the right).
+                           Vertical offset (shadow moves 5px down).
+                           Blur radius ( 10px how blurry the shadow is).
+                           Spread radius ( 4px controls the size of the shadow).
+                           Color of the shadow.*/
+            gap: 20px 0px;   /*new- for getting gaps b/t rows in flex wrap concept (or) can even use normally when taking flex.
+            Single Value: gap: 20px; applies the same gap to both rows and columns.
+            Two Values: gap: 20px 0px; specifies the row gap first, followed by the column gap.*/
+        }
+
+        #subject{
+            width: 85%;
+        }
+
+        textarea{
+            width: 85%;
+            padding: 5px;
+        }
+
+        #get{
+            width: 86%;
+            margin: auto 0px 0px 0px;
+        }
+
+        button{
+            width: 30%;
+            margin-right: 340px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            border: 2px solid blue;
+            background-color: blue;
+            color: white;
+        }
+
+        #name{
+            width:40%;
+            margin-right: 21px;
+        }
+
+        #email{
+            width:40%;
+        }
+
+        i{
+            margin-right: 20px;
+        }
+
+        span{
+            margin-left: 42px;
+        }
+
+        #con{
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Contact Form #01</h1>
+
+    <div class="main-container">
+        <div class="form-container">
+            <div id="forms">
+            <h2 id="get">Get in touch</h2>
+            <input id="name" type="text" value="Name"/>
+            <input id="email" type="email" value="Email"/>
+            <input id="subject" type="text" value="Subject"/>
+            <textarea placeholder="Message" rows="8" cols="20"></textarea>
+            <button>Send Message</button>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <dl>
+                <dt><h2 id="con">Contact Us</h2></dt>
+                <dd><i class="bi bi-geo-alt"></i><b>Address:</b> 198 West 21th<br>
+                     <span>Street, Suite 721 New York NY</span> <br>
+                     <span>10016</span> </dd><br>
+                <dd><i class="bi bi-telephone-fill"></i><b>Phone:</b> + 1235 2355 98</dd><br>
+                <dd><i class="bi bi-envelope"></i><b>Email:</b> info@yoursite.com</dd><br>
+                <dd><i class="bi bi-globe"></i><b>Website:</b> yoursite.com</dd>
+            </dl>
+
+        </div>
+    </div><br><br><br>
+
+    <div>
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-11</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:aquamarine;
+        }
+
+        .main-container{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            background-color: white;
+        }
+
+        .app{
+            width: 80%;
+        }
+
+        .firstlast{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+        }
+
+        .first{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .gap{
+            margin-bottom: 10px;
+        }
+
+        .in{
+            width: 98%;
+            height: 100%;
+            border: 2px solid rgb(189, 171, 171);
+        }
+
+        .birthday{
+            width: 40%;  
+            align-self: flex-start;
+            margin-left: 118px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bir{
+            height: 30px;
+            width: 50%;
+            border: 2px solid rgb(189, 171, 171);
+        }
+
+        #dob{
+            align-self: center;
+        }
+
+        .gender{
+            width: 50%;
+            align-self: flex-start;
+            margin-left: 118px; 
+        }
+
+        .male{
+            margin-left: 175px;
+        }
+
+        .grade{
+            width: 40%;
+            align-self: flex-start;
+            margin-left: 118px;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        #gra{
+            align-self: center;
+            display: flex; 
+        }
+
+        .languages{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #lan{
+            align-self: center;
+        }
+
+        #lann{
+            height: 30px;
+            width: 75%;
+            border: 2px solid rgb(189, 171, 171);
+        }
+
+        .siblings{
+            width: 80%;
+        }
+
+        .father{
+            display: grid;
+            grid-template-columns: 40% 50%;
+            grid-template-rows: 25% 25% 25% 25%;
+            width: 80%;
+            height: 100px;
+            border: 2px solid rgb(189, 171, 171);  
+        }
+       
+        .ins{
+            width: 560px;
+            border: none;
+            border-bottom: 2px solid rgb(189, 171, 171);
+            border-right: 2px solid rgb(189, 171, 171);  
+        }
+
+        .bomb{
+            border-bottom: 2px solid rgb(189, 171, 171);
+            border-right: 2px solid rgb(189, 171, 171);
+            padding-left: 7px;
+        }
+
+        #bo{
+            border-bottom: none;
+            border-right: 2px solid rgb(189, 171, 171);
+            padding-left: 7px;
+        }
+
+        #ppp{
+            border: none;
+            border-right: 2px solid rgb(189, 171, 171);
+        }
+       
+        #information{
+            width: 80%;
+        }
+       
+        .address{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 75%;
+            width: 80%;
+            height: 100px;
+        }
+
+        .cash{
+            margin-left: 140px;
+        }
+
+        .terms{
+            background-color: blue;
+            color: white;
+            padding-left: 7px;
+        }
+
+        #ter{
+            height: 100px;
+        }
+
+        #sad{
+            width: 14%;
+            text-align: right;
+            border-top: 2px solid rgb(189, 171, 171);
+            align-self: flex-end;
+            margin-right: 118px;
+        }
+
+        textarea{
+             border: 2px solid rgb(189, 171, 171);
+        }
+
+        #con{
+            border: 2px solid rgb(189, 171, 171);
+            border-top: none;
+        }
+
+        #ad{
+            border-top: none;
+        }
+
+        ol{
+            padding-left: 25px;
+        }
+
+        #sigma{
+            border-top: 2px solid rgb(189, 171, 171);
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <h1 style="color: blue;">Student Registration Form</h1>
+
+        <div class="app">
+        <p>Name of the Applicant:</p>
+        </div>
+
+        <div class="firstlast">
+            <div class="first">
+                <label class="gap">First Name</label>
+                <input class="in" type="text"/>
+            </div>
+            <div class="first">
+                <label class="gap">Last Name</label>
+                <input class="in" type="text"/>
+            </div>
+        </div><br>
+
+        <div class="birthday">
+        <label id="dob">Date of Birth:</label>
+        <input class="bir"  type="date"/>
+        </div><br>
+
+        <div class="gender">
+        <label>Gender:</label>
+        <input class="male" type="radio"/>Male
+        <input type="radio"/>Female
+        </div><br>
+
+        <div class="grade">
+        <label id="gra">Grade:</label>
+        <input class="bir"  type="number"/>
+        </div><br>
+
+        <div class="languages">
+        <label id="lan">Languages spoken:</label>
+        <input id="lann"  type="text"/>        
+        </div><br>
+
+        <div class="siblings">
+        <label>Details of Siblings:</label><br><br>
+        <textarea cols="125" rows="4"></textarea>
+        </div><br>
+
+        <div id="information">
+        <label>Parent's Information:</label>
+        </div><br>
+
+        <div class="father">
+            <label class="bomb">Father's Name</label>
+            <input class="ins"  type="text"/>
+            <label class="bomb">Father's Qualification</label>
+            <input  class="ins" type="text"/>
+            <label class="bomb">Father's Email & Phone No</label>
+            <input  class="ins" type="text"/>
+            <label id="bo">Father's Occupation</label>
+            <input id="ppp" class="ins" type="text"/>
+        </div><br>
+
+        <div class="father">
+            <label class="bomb">Mother's Name</label>
+            <input class="ins"  type="text"/>
+            <label class="bomb">Mother's Qualification</label>
+            <input  class="ins" type="text"/>
+            <label class="bomb">Mother's Email & Phone No</label>
+            <input  class="ins" type="text"/>
+            <label id="bo">Mother's Occupation</label>
+            <input id="ppp" class="ins" type="text"/>
+        </div><br>
+
+        <div id="information">
+            <label>Address:</label>
+        </div>
+
+        <div class="address">
+            <label class="terms">Residential Address</label>
+            <textarea id="ad"></textarea>
+        </div><br>
+
+        <div class="gender">
+            <label>Payment Details</label>
+            <input class="cash" type="radio"/> Cash
+            <input type="radio"/> Check
+            <input type="radio"/> Card
+        </div><br>
+
+        <div id="ter" class="address">
+            <label class="terms">Terms and Conditions</label>
+            <div id="con">
+                <ol type="1">
+                    <li>I/we certify that above information provided by me/us is correct.</li>
+                    <li>I undertake to submit all the documents in original for verification.</li>
+                </ol>
+            </div>
+        </div><br><br><br>
+
+        <div id="sad">
+            <p>Signature and Date</p>
+        </div>
+    </div>
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

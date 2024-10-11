@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>c-9</title>
+    <style>
+
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container{
+            height: 90%;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 15% 70% 20%;
+        }
+
+        .first{
+            grid-column: 1/3;
+        }
+
+        .second{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(219, 219, 219);
+        }
+       
+        .four{
+            grid-column: 1/3;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            gap: 120px;
+        }
+
+        #cf{
+            text-align: center;
+        }
+
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+
+        #name{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .common{
+            width: 85%;
+        }
+
+        .sameinp{
+            width: 100%;
+            box-sizing: border-box;
+            height: 40px;
+            padding-left: 10px;
+        }
+       
+        .samediv{
+            width: 48%;
+        }
+
+        h5{
+            margin-bottom: 10px;
+        }
+
+        h2{
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        textarea{
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 10px;
+            height: 100px;
+        }
+
+        button{
+            height: 40px;
+            padding-left: 10px;
+            width: 20%;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        .iconscommon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 110px;
+        }
+
+        i{
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: blue;
+            color: white;
+            padding: 15px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="first">
+            <h1 id="cf">Contact Form #06</h1>
+        </div>
+
+        <div class="second">
+            <div class="common">
+            <h2>Contact Us</h2>
+            </div>
+            
+            <div class="common"  id="name">
+                <div class="samediv">
+                    <h5>FULL NAME</h5>
+                    <input class="sameinp" type="text" placeholder="Name"/>
+                </div>
+                <div class="samediv">
+                    <h5>EMAIL ADDRESS</h5>
+                    <input class="sameinp" type="email" placeholder="Email"/>
+                </div>
+            </div>
+
+            <div class="common">
+                <h5>SUBJECT</h5>
+                <input class="sameinp" type="text" placeholder="Subject"/>
+            </div>
+
+            <div class="common">
+                <h5>MESSAGE</h5>
+                <textarea placeholder="Message"></textarea>
+            </div>
+
+            <div class="common"> 
+                <button type="button">Send Message</button>
+            </div>
+        </div>
+
+        <div class="third">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52189864.485701494!2d46.839854549999785!3d37.02371362652819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb919ef6c7c09d%3A0xe03175b81113bc71!2sNexus%20Hyderabad%20Mall!5e0!3m2!1sen!2sin!4v1728636805608!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="four">
+
+            <div class="iconscommon">
+                <i class="bi bi-geo-alt"></i>
+                <p><b>Address:</b> 198 West 21th Street<br>
+                Suite 721 New York NY 10016</p>
+            </div>
+
+            <div class="iconscommon">
+                <i class="bi bi-telephone"></i>
+                <p><b>Phone:</b> <a href="#">+ 1235 2355 98</a></p>
+            </div>
+
+            <div class="iconscommon">
+                <i class="bi bi-envelope"></i>
+                <p><b>Email:</b> <a href="#">info@yoursite.com</a></p>
+            </div>
+
+            <div class="iconscommon">
+                <i class="bi bi-globe"></i>
+                <p><b>Website:</b> <a href="#">www.yoursite.com</a></p>
+            </div>
+
+        </div>
+
+    </div><br>
+    
+
+    <div id="ssk">
+        <h1 style="color: red; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center">Done By: Swarna Kamal</h1>
+    </div>
+    
+</body>
+</html>

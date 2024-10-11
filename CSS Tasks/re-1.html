@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re-1</title>
+    <style>
+
+        body{
+            height: 98vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(185, 5, 125);
+        }
+
+        .main-container{
+            width: 40%;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px 5px black;
+        }
+       
+        .allrows{
+            width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .firstrow{
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        .firstrow1{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            margin-bottom: 10px; 
+        }
+
+        label {
+        margin-bottom: 5px;
+        }
+
+        input {
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px solid rgb(230, 233, 236);
+        background-color:  rgb(230, 233, 236);
+        }
+
+       .gen{
+        width: 48%;
+        }
+
+       .fem{
+        margin-left: 50px;
+       }
+
+        select{
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px solid rgb(230, 233, 236);
+        background-color:  rgb(230, 233, 236);
+       }
+
+        button{
+        margin-right: 440px;
+        padding: 15px;
+        width: 20%;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 2px solid blue;
+        background-color:  blue;
+        color: white;
+        }
+
+        #mainhead{
+        margin-left: 50px;
+        align-self: flex-start;
+        margin-top: 45px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1 id="mainhead">Registration Form</h1>
+        <div class="allrows">
+            <div class="firstrow">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" value="Sri Swarna Kamal">
+            </div>
+
+            <div class="firstrow">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" value="Ch">
+            </div>
+        </div>
+
+        <div class="allrows">
+            <div class="firstrow">
+                <label for="bir">Birthday</label>
+                <input type="date" id="bir" style="color: transparent;" name="bir"> <!-- new-- give color transparent to make dd-mm-yy gone-->
+            </div>
+
+            <div class="gen">
+                <label for="gen">Gender</label><br><br>
+                <input type="radio" checked id="gen" name="male">Male
+                <input type="radio" class="fem" id="gen" name="female">Female
+            </div>
+        </div>
+
+
+        <div class="allrows">
+            <div class="firstrow">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="firstrow">
+                <label for="pn">Phone Number</label>
+                <input type="tel" id="pn" name="pn">
+            </div>
+        </div>
+
+        <div class="firstrow1">
+        <label>Subject</label>
+        <select>
+            <option selected>Choose Option</option>
+            <option>Sports</option>
+            <option>Movies</option>
+            <option>Education</option>
+        </select>
+        </div>
+
+        
+        <button>Submit</button>
+        
+    </div><br><br><br><br>
+
+
+    <div>
+        <h1 style="color: white; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Done By: Swarna Kamal</h1>
+    </div>
+
+</body>
+</html>
