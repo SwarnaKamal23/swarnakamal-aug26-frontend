@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>
+Pizza Order
+</title>
+</head>
+
+<body>
+
+<h1 style="text-align:center">Pizza Order</h1>
+
+<table border="3px" width="40%" align="center">
+
+  <tr>
+    <th colspan="2">Pizza Shop 2.0</th>
+  </tr>
+  
+  <tr>
+    <td>Name</td>
+	<td><input type="text" name="name" id="name" style="background-color:f1b09b"/></td>
+  </tr>
+  
+   <tr>
+    <td>Pizza Topping</td>
+	<td>
+	<input type="radio" name="topping" value="supreme"/>Supreme<br>
+	<input type="radio" name="topping" value="vegetarian"/>Vegetarian<br>
+	<input type="radio" name="topping" value="hawaiian"/>Hawaiian
+	</td>
+  </tr>
+  
+  <tr>
+    <td>Pizza Sauce</td>
+	<td>
+	<select style="background-color:c4c0be">
+	 <option value="tomato">Tomato</option>
+	 <option value="soya">Soya</option>
+	 <option value="combo">Tomato+Ketch Combo</option>
+	</select>
+	</td>
+  </tr>
+  
+  <tr>
+   <td>Optional Extras</td>
+   <td>
+   <input type="checkbox" name="extras" value="extra cheese"/>Extra Cheese
+   <input type="checkbox" name="extras" value="gluten free base"/>Gluten Free Base
+   </td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+	<pre style="font-family:timesroman">
+Delivery Instructions:
+<textarea name="instructions" rows="5"cols="70"></textarea></pre>
+	</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"><input type="submit" value="Send my order"/> <input type="reset" value="Clear"/></td>
+  </tr>
+
+</table>
+
+<h1 style="text-align:center;color:red;font-size:50">Done By: <i>Swarna Kamal</i></h1>
+
+</body>
+</html>
